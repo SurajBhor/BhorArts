@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+	font-family: "Poppins";
+	background: url("bg-img.jpg") repeat center center;
+    margin: 0;
+}
+
+img{
+	width: 21.4%;
+}
+.imgSet img{
+	width: 21.4%;
+	height: auto;
+	margin: 1.66%;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 0px 0px 4px rgba(255,255,255,1);
+	-moz-box-shadow: 0px 0px 0px 4px rgba(255,255,255,1);
+	box-shadow: 0px 0px 0px 4px rgba(255,255,255,1);
+	transition: all 400ms ease;
+}
+.imgSet img:hover{
+	opacity: 0.79;
+	transform: scale(1.03);
+}
+.header{
+	backdrop-filter: blur(60px);
+    margin: 0 2rem;
+    border-radius: 27px;
+    padding: 4px 0;
+    background: rgba(255, 255, 255, 0.35);
+    margin-top: 25px;
+}
+.title{
+	display: flex;
+	width: 22%;
+	align-items: center;
+	margin: 0 auto;
+}
+.title img{
+	width: 20%;
+	height: 100%;
+}
+.title p{
+	margin: 10px;
+	margin-left: 1.66%;
+	font-size: 35px;
+	text-transform: uppercase;
+	font-weight: 800;
+	/*padding-bottom: 20px; */
+}
+.contact{
+	text-align: center;
+	font-size: 20px;
+	font-weight: 600;
+}
+.imgSet{
+	margin: 1rem;
+	z-index: 0;
+}
+.imgSet .img-cover{
+	background: transparent;
+}
+.imgSet .img-cover:hover{
+	background: rgba(237, 140, 43, 0.5);
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 10; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.75); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  margin: auto;
+  width: 100%;
+}
+
+/* Modal Content (image) */
+.modal-img {
+  margin: auto;
+  display: block;
+  width: 30%;
+  float: none;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+}
+#caption-text{
+	font-size: 40px;
+    margin: 10px auto;
+}
+
+/* Add Animation */
+.modal-img, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn{
+	text-decoration:none;
+	color: white;
+	background-color: #3434d7;
+	font-size: 20px;
+	font-weight: 500;
+	padding: 10px 20px;
+    border-radius: 35px;
+	margin-top: 20px;
+	margin: auto 6px;
+}
+.btn.btn-green{
+	background-color: green;
+}
+.footer{
+	background: rgba(255,255,255, 0.4);
+    text-align: center;
+    font-size: 20px;
+}
+.footer a{
+	text-decoration: none;
+	color: black;
+}
+
+@media screen and (max-width: 900px){
+	.imgSet{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.imgSet img{
+		width: 27%;
+    	margin: 1rem 15px;
+    	border-radius: 10px;
+	}
+	.title{
+		width: 40%;
+	}
+	.title img{
+		width: 20%;
+	}
+	.title p{
+		font-size: 25px;
+	}
+	.contact{
+		font-size: 20px;
+	}
+	.contact a{
+		text-decoration: none;
+		cursor: pointer;
+	}
+	.modal-img {
+	  margin: auto;
+	  display: block;
+	  width: 95%;
+	  float: none;
+	}
+	.close{
+		top: 0;
+		font-size: 40px;
+		color: white;
+	}
+
+}
+
